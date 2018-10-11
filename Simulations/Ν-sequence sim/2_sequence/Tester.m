@@ -1,0 +1,1 @@
+  nOfBits = 40000002;  Bits = randi([0,1], nOfBits, 1);  x=zeros(0);  for EbNo = 10:1:12    EbNo    y=EbNo;    x=[x; CSK_Tester(Bits, y)];  end  EbNo=10:1:12;  semilogy(EbNo, x,'Color','y');  ylabel('BER');  xlabel('Eb/No');  title('Bit Error as a function of SNR');  hold on        
