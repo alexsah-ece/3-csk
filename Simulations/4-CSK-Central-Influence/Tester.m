@@ -1,0 +1,1 @@
+  nOfBits = 1000000;  Bits = randi([0,1], nOfBits, 1);  y=zeros(16);  z=zeros(16);  for EbNo = 0:1:15    EbNo    [y(EbNo+1), z(EbNo+1)] = CSK_Tester(Bits, EbNo);  end  EbNo=0:1:15;  %y(y == 0) = NaN  plot(EbNo, y, 'b')  ylabel('Bit Errors');  xlabel('Eb/No');  title('Bit errors caused by central symbol');  hold on  plot(EbNo, z, 'r')        
